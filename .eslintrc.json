@@ -1,54 +1,7 @@
 {
   "extends": "airbnb",
   "parser": "babel-eslint",
-  "plugins": ["jest"],
-  "env": {
-    "jest/globals": true
-  },
-  "globals": {
-    "__DEV__": true,
-    "fetch": false,
-    "XMLHttpRequest": false
-  },
   "rules": {
-    "react/jsx-curly-brace-presence": ["error", { "props": "always", "children": "never" }],
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "react/jsx-boolean-value": ["warn", "always"],
-    "object-curly-newline": ["error", {
-      "ObjectExpression": { "multiline": true, "minProperties": 6, "consistent": true },
-      "ObjectPattern": { "multiline": true, "minProperties": 6, "consistent": true },
-      "ImportDeclaration": { "multiline": true, "minProperties": 6, "consistent": true },
-      "ExportDeclaration": { "multiline": true, "consistent": true }
-    }],
-    "comma-dangle": ["error", "always-multiline"],
-    "import/no-unresolved": ["error", { "ignore": ["^src/"] }],
-    "react/no-unescaped-entities": "off",
-    "class-methods-use-this": "off",
-    "no-underscore-dangle": "off",
-    "no-else-return": "off",
-    "camelcase": "off",
-    "react/no-array-index-key": "off",
-    "multiline-comment-style": ["error", "starred-block"],
-    "react/jsx-no-bind": ["error", {
-      "ignoreRefs": true,
-      "allowArrowFunctions": false,
-      "allowFunctions": false,
-      "allowBind": false,
-      "ignoreDOMComponents": true
-    }],
-    "prefer-destructuring": ["error", {
-      "VariableDeclarator": { "array": false, "object": true },
-      "AssignmentExpression": { "array": false, "object": false }
-    }, {
-      "enforceForRenamedProperties": false
-    }],
-    "react/forbid-prop-types": "off",
-    "react/require-default-props": "off",
-    "react/prop-types": "off",
-    "react/jsx-no-bind": "off",
-    "react/jsx-curly-spacing": ["error", "never", { "children": true, "allowMultiline": true }],
-    "no-param-reassign": "off",
-    "no-console": "off",
     "import/no-extraneous-dependencies": [ "error", { "packageDir": ["./", "../../" ] } ]
   }
 }
